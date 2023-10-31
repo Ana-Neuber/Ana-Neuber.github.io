@@ -1,0 +1,182 @@
+.carousel {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigation {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation label {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .slides .slide:nth-child(1),
+#slide2:checked ~ .slides .slide:nth-child(2),
+#slide3:checked ~ .slides .slide:nth-child(3), 
+#slide4:checked ~ .slides .slide:nth-child(4),
+#slide5:checked ~ .slides .slide:nth-child(5),
+#slide6:checked ~ .slides .slide:nth-child(6),
+#slide7:checked ~ .slides .slide:nth-child(7),
+#slide8:checked ~ .slides .slide:nth-child(8), 
+#slide9:checked ~ .slides .slide:nth-child(9),
+#slide10:checked ~ .slides .slide:nth-child(10){
+  display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #03300B;
+    font-family: 'Oswald', sans-serif;
+}
+.socialicons{
+    border-radius: 100%;
+}
+#Compartilhar{
+    background: #541d8c; 
+    border-radius: 6px; 
+    padding: 15px; 
+    cursor: pointer; 
+    color: #F0FFF0;
+    border: none; 
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+#sidenav{
+    color: #F0FFF0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    box-orient: vertical;
+    box-direction: normal;
+    flex-direction: column;
+    flex-direction: column;
+    width: 13rem;
+    height: 100vh;
+    background-color: #03300B;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 25;
+    
+}
+.titulo{
+    padding-top: 0.5%;
+    font-size: 60;
+    color: #228B22;
+    
+}
+.subtitulo{
+    margin-top: -2%;
+}
+.conteudo{
+    font-size: 25;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 2%;
+}
+#navitens{
+    padding: 0;   
+}
+.barra{
+    color: #F0FFF0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#header{
+    right: 0;
+    background-color: #F0FFF0;
+    flex-direction: column;
+    padding-left: 13rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+#apresentacao{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    font-size: 25;
+}
+#perfil{
+    background-color: #F0FFF0;
+    padding: 3;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #F0FFF0;
+    
+}
+#nometitulo{
+    font-size: 50;
+    color: rebeccapurple;
+    display: inline-block;
+    text-align: center; 
+    padding-left: 10%; 
+    
+}
+#portifolio{
+    font-size: 40;
+    color: #F0FFF0;
+    float: right;
+    background-color: black;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#conteudo{
+    right: 0;
+    background-color: #F0FFF0;
+    flex-direction: column;
+    padding-left: 13rem;
+
+   
+}
+#contato{
+    font-display: block;
+    padding-top: 10%;
+    
+}
+.creditos{
+    color: gray;
+    padding-left: 13rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15
+}
+
